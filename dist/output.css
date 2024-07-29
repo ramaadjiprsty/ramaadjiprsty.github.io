@@ -704,6 +704,10 @@ video {
   margin-top: 0.25rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1173,6 +1177,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .sm\:p-3 {
     padding: 0.75rem;
   }
