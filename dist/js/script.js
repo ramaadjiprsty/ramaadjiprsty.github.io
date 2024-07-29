@@ -17,3 +17,23 @@ window.onscroll = function() {
         header.classList.remove('navbar-fixed');
     }
 };
+
+//anim
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', '-translate-x-full');
+          entry.target.classList.add('animate-fadeIn');
+        }
+      });
+    }, {
+      threshold: 0.1 // Trigger when 10% of the section is in view
+    });
+    
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
