@@ -12,20 +12,32 @@
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-6">Enneva</a>
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Rama Adji Prasetyo</a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
                         <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full">
-                        <ul class="block ">
-                            <li>
-                                <a href="#home">Beranda</a>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
                             </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#education" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Education</a>
+                            </li>
+                            <!-- <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>
@@ -40,16 +52,16 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2 ">
-                    <h1 class="text-base font-semibold text-primary md:text-xl ">Halo Semua👋, Saya <span class="block font-bold text-dark text-4xl lg:text-5xl">Rama Adji Prasetyo</span></h1>
+                    <h1 class="text-base font-semibold text-primary md:text-xl ">Hi Everyone!👋, Im <span class="block font-bold text-dark text-4xl lg:text-5xl">Rama Adji Prasetyo</span></h1>
                     <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">Informatics Engineering Student</h2>
-                    <p class="font-medium text-secondary mb-10 leading-relaxed">Belajar web programming itu mudah dan menyenangkan bukan? <span class="text-red-600">Bukan!</span></p>
+                    <!-- <p class="font-medium text-secondary mb-10 leading-relaxed">Belajar web programming itu mudah dan menyenangkan bukan? <span class="text-red-600">Bukan!</span></p> -->
 
-                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+                    <!-- <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a> -->
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-0 lg:right-0">
                         <img src="dist/img/profile.png" alt="rama" class="max-w-full mx-auto" height="400px" width="400px">
-                        <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                        <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-110">
                             <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#4338ca" d="M36.8,-44.4C45.4,-28.2,48.5,-14.1,52.7,4.2C56.9,22.4,62.1,44.9,53.5,57.1C44.9,69.3,22.4,71.3,5.5,65.8C-11.5,60.4,-23,47.4,-38.8,35.2C-54.6,23,-74.7,11.5,-75.5,-0.9C-76.4,-13.2,-58,-26.4,-42.2,-42.6C-26.4,-58.8,-13.2,-78,0.4,-78.4C14.1,-78.9,28.2,-60.6,36.8,-44.4Z" transform="translate(100 100) scale(1.1)"  />
                               </svg>
@@ -62,33 +74,29 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32"> 
+    <section id="about" class="pt-36 pb-18"> 
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Lorem ipsum dolor sit amet.</h2>
-                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eveniet delectus iusto voluptatum odit explicabo dolorem inventore vel possimus earum!</p>
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Journey into Android and Mobile Innovation</h2>
+                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">As an undergraduate informatics engineering student, I am currently focusing on mobile development, with a particular emphasis on Android. My studies involve mastering Android architecture, including MVVM patterns, and integrating machine learning to create intelligent and responsive applications. Through my coursework and hands-on projects, I am developing a deep understanding of modern mobile development practices and tools. This journey is enhancing my ability to design and implement innovative solutions that push the boundaries of mobile technology.</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
                     <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Lets Connect!</h3>
-                    <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda sint, delectus aliquid doloribus ut nostrum iusto a alias laudantium eveniet accusamus, illo autem quae? Et.</p>
+                    <p class="font-medium text-base text-secondary mb-6 lg:text-lg"> Whether you have questions about my work, want to discuss mobile development, or just want to network, feel free to reach out. I'm always excited to connect with like-minded professionals and enthusiasts. Lets explore opportunities and ideas together!</p>
                     <div class="flex items-center">
-                        <!-- YT -->
-                        <a href="https://youtube.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        </a>
                          <!-- Instagram -->
-                        <a href="https://instagram.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <a href="https://www.instagram.com/ramaadjiii/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                             <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
                         </a>
                         <!-- Facebook -->
-                        <a href="https://youtube.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-                            <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                        <a href="https://github.com/ramaadjiprsty" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                         </a>
                         <!-- TikTok -->
-                        <a href="https://youtube.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-                            <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        <a href="https://www.linkedin.com/in/ramaadjiprsty/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -96,6 +104,184 @@
         </div>
     </section>
     <!-- About Section End -->
+
+    <!-- Porftolio section start -->
+    <section id="portfolio" class="pt-20 pb-18 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-3xl text-primary mb-2">Porftolio</h4>
+                    <!-- <h2 class="font-bold text-dark text-3xl mb-4">Project Terbaru</h2> -->
+                    <p class="font-medium text-md text-secondary">Explore the Android app projects I've been working on. Each application showcases different features and techniques, reflecting ongoing experimentation and learning. Check out these projects to see the progress and creativity involved in each development.</p>
+                </div>
+            </div>
+            <div class="div w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="div mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden md:h-80 xl:h-96 hover:scale-110 transition-transform">
+                        <img src="dist/img/porto/Valorant.png" alt="Valorant Agent" width="w-full"/>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Valorat Agent App</h3>
+                        <a href="https://github.com/ramaadjiprsty/Compose-Submission" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </div>
+                    <p class="font-medium text-base text-secondary">Simple Android Application build in Jetpack Compose, showing description, role, also Skill for each Agent on Valorant using API from 
+                        <a href="https://valorant-api.com/" class="text-blue-500 hover:underline" target="_blank">Valorant API</a> and Retrofit Library for consume the API
+                    </p>
+                    <div class="flex items-center mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
+                            <path fill="#00c853" d="M4,23C4,11.954,12.954,3,24,3s20,8.954,20,20l-20,2L4,23z"></path><path fill="#00e676" d="M44,23c0,11.046-8.954,20-20,20S4,34.046,4,23H44z"></path><path fill="#c2eafd" d="M39.29,42.34v3.16c0,0.19-0.1,0.35-0.25,0.43c-0.14,0.09-0.33,0.1-0.5,0l-2.72-1.59l-4.68-8.15	l-2-3.47l-3.75-6.52l2.93-2.93l3.99,6.94l2.07,3.6L39.29,42.34z"></path><path fill="#9addfb" d="M31.231,28.335c-0.814,1.101-1.869,2.011-3.092,2.648l3.991,6.941	c1.185-0.648,2.272-1.446,3.265-2.346L31.231,28.335z"></path><path fill="#c2eafd" d="M39,23c0,4.24-1.77,8.08-4.62,10.81c-0.96,0.93-2.05,1.73-3.24,2.38C29.02,37.34,26.59,38,24,38	c-2.53,0-4.96-0.62-7.14-1.81l-4.68,8.15l-2.72,1.59c-0.17,0.1-0.36,0.09-0.5,0c-0.15-0.08-0.25-0.24-0.25-0.43v-3.16l10.97-19.07	l2.93,2.93l-3.75,6.53C20.43,33.56,22.18,34,24,34c1.86,0,3.61-0.46,5.14-1.28c1.21-0.63,2.28-1.49,3.17-2.51	C33.99,28.27,35,25.76,35,23H39z"></path><path fill="#37474f" d="M28.5,13H26v-3h-4v3h-2.5c-0.828,0-1.5,0.672-1.5,1.5V23l4.932,4.932c0.59,0.59,1.546,0.59,2.135,0	L30,23v-8.5C30,13.672,29.328,13,28.5,13z M24,22c-1.381,0-2.5-1.119-2.5-2.5c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5	C26.5,20.881,25.381,22,24,22z"></path>
+                            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
+                            <polygon fill="#0d91d6" points="24,6 17.99,12.35 11.97,18.69 6,25 6,6"></polygon><polygon fill="#f88909" points="24,6 23.96,6 17.97,12.33 11.96,18.68 6,24.97 6,25 6,25.09 6,42 14.69,33.31 20.87,27.13 27.06,20.94 33.25,14.75 42,6"></polygon><polygon fill="#c757bc" points="14.69,33.31 6,42 6,25.09"></polygon><polygon fill="#d3638f" points="20.87,27.13 14.69,33.31 6,25.09 6,25 11.97,18.69"></polygon><polygon fill="#e07063" points="27.06,20.94 20.87,27.13 11.97,18.69 17.99,12.35"></polygon><polygon fill="#ec7d36" points="33.25,14.75 27.06,20.94 17.99,12.35 24,6"></polygon><polygon fill="#f88909" points="42,6 33.25,14.75 24,6"></polygon><polygon fill="#0095d5" points="11.51,19.15 7.99,22.88 6,21 6,13.94"></polygon><polygon fill="#2b88da" points="15.03,15.42 11.51,19.15 6,13.94 6,6.87"></polygon><polygon fill="#557bde" points="18.56,11.7 15.03,15.42 6,6.87 6,6 12.53,6"></polygon><polygon fill="#806ee3" points="22.08,7.97 18.56,11.7 12.53,6 24,6"></polygon><polygon fill="#0095d5" points="23,25 6,42 9.35,42 17.52,42 40,42"></polygon><polygon fill="#2b88da" points="25.68,42 17.52,42 11.76,36.25 15.84,32.17"></polygon><polygon fill="#557bde" points="33.86,42 25.68,42 15.84,32.17 19.92,28.09"></polygon><polygon fill="#806ee3" points="42,42 33.86,42 19.92,28.09 24,24"></polygon>
+                            </svg>
+                        <svg role="img" viewBox="0 0 24 24" width="35" xmlns="http://www.w3.org/2000/svg"><title>Jetpack Compose</title><path d="M12.135.003a2.577 2.577 0 0 0-1.42.344L2.55 5.06a2.577 2.577 0 0 0-.953.967l3.957 2.17a1.765 1.765 0 0 1 .603-.588l4.951-2.86a1.761 1.761 0 0 1 1.76 0l4.951 2.86a1.753 1.753 0 0 1 .526.46l3.921-2.265a2.577 2.577 0 0 0-.816-.744L13.291.347a2.577 2.577 0 0 0-1.152-.34Zm-.145 4.912a1.36 1.36 0 0 0-.68.182L6.36 7.953a1.345 1.345 0 0 0-.454.435l1.92 1.055a1.05 1.05 0 0 1 .31-.275l3.34-1.928a1.054 1.054 0 0 1 1.051 0l3.336 1.928a1.066 1.066 0 0 1 .238.199l.018-.01-.002-.002 1.877-1.08a1.353 1.353 0 0 0-.373-.322l-4.95-2.86a1.357 1.357 0 0 0-.68-.178Zm10.432 1.149-3.92 2.26a1.757 1.757 0 0 1 .2.812v5.715c0 .627-.332 1.21-.88 1.528l-4.95 2.86a1.761 1.761 0 0 1-.64.214v4.524a2.577 2.577 0 0 0 1.059-.313l8.162-4.713a2.577 2.577 0 0 0 1.289-2.23V7.297a2.577 2.577 0 0 0-.318-1.228Zm-20.937.238a2.577 2.577 0 0 0-.227.99v9.43c0 .918.491 1.767 1.293 2.229l8.162 4.713a2.57 2.57 0 0 0 1.225.336v-4.531a1.761 1.761 0 0 1-.833-.235L6.156 16.38a1.765 1.765 0 0 1-.877-1.528V9.136a1.776 1.776 0 0 1 .131-.676Zm16.67 2.223-1.89 1.092a1.058 1.058 0 0 1 .124.46v3.856c0 .378-.2.72-.526.907l-3.336 1.93a1.04 1.04 0 0 1-.295.107v2.17c.152-.027.304-.078.44-.157l4.949-2.859a1.36 1.36 0 0 0 .68-1.18V9.136a1.36 1.36 0 0 0-.147-.607Zm-12.387.13a1.36 1.36 0 0 0-.088.481v5.715a1.36 1.36 0 0 0 .68 1.18l4.95 2.86c.194.112.412.166.627.177v-2.174a1.054 1.054 0 0 1-.46-.123L8.14 14.843a1.054 1.054 0 0 1-.532-.908v-3.853a.99.99 0 0 1 .077-.38l-.034-.013z"/></svg>
+                    </div>
+                </div>
+                <div class="div mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden  md:h-80 xl:h-96 hover:scale-110 transition-transform">
+                        <img src="dist/img/porto/Asclepius.png" alt="Asclepius" width="w-full"/>
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Skin Cancer Detector</h3>
+                    <p class="font-medium text-base text-secondary">An android application made to complete a class at Dicoding, this application has a skin cancer classification feature based on images, using a tensorflow model that has been converted to tensorflow lite. another feature is that it can display cancer-related news using 
+                        <a href="https://newsapi.org/" class="text-blue-500 hover:underline" target="_blank">NewsAPI</a> and Retrofit library.</p>
+                    <div class="flex items-center mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
+                            <path fill="#00c853" d="M4,23C4,11.954,12.954,3,24,3s20,8.954,20,20l-20,2L4,23z"></path><path fill="#00e676" d="M44,23c0,11.046-8.954,20-20,20S4,34.046,4,23H44z"></path><path fill="#c2eafd" d="M39.29,42.34v3.16c0,0.19-0.1,0.35-0.25,0.43c-0.14,0.09-0.33,0.1-0.5,0l-2.72-1.59l-4.68-8.15	l-2-3.47l-3.75-6.52l2.93-2.93l3.99,6.94l2.07,3.6L39.29,42.34z"></path><path fill="#9addfb" d="M31.231,28.335c-0.814,1.101-1.869,2.011-3.092,2.648l3.991,6.941	c1.185-0.648,2.272-1.446,3.265-2.346L31.231,28.335z"></path><path fill="#c2eafd" d="M39,23c0,4.24-1.77,8.08-4.62,10.81c-0.96,0.93-2.05,1.73-3.24,2.38C29.02,37.34,26.59,38,24,38	c-2.53,0-4.96-0.62-7.14-1.81l-4.68,8.15l-2.72,1.59c-0.17,0.1-0.36,0.09-0.5,0c-0.15-0.08-0.25-0.24-0.25-0.43v-3.16l10.97-19.07	l2.93,2.93l-3.75,6.53C20.43,33.56,22.18,34,24,34c1.86,0,3.61-0.46,5.14-1.28c1.21-0.63,2.28-1.49,3.17-2.51	C33.99,28.27,35,25.76,35,23H39z"></path><path fill="#37474f" d="M28.5,13H26v-3h-4v3h-2.5c-0.828,0-1.5,0.672-1.5,1.5V23l4.932,4.932c0.59,0.59,1.546,0.59,2.135,0	L30,23v-8.5C30,13.672,29.328,13,28.5,13z M24,22c-1.381,0-2.5-1.119-2.5-2.5c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5	C26.5,20.881,25.381,22,24,22z"></path>
+                            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
+                            <polygon fill="#0d91d6" points="24,6 17.99,12.35 11.97,18.69 6,25 6,6"></polygon><polygon fill="#f88909" points="24,6 23.96,6 17.97,12.33 11.96,18.68 6,24.97 6,25 6,25.09 6,42 14.69,33.31 20.87,27.13 27.06,20.94 33.25,14.75 42,6"></polygon><polygon fill="#c757bc" points="14.69,33.31 6,42 6,25.09"></polygon><polygon fill="#d3638f" points="20.87,27.13 14.69,33.31 6,25.09 6,25 11.97,18.69"></polygon><polygon fill="#e07063" points="27.06,20.94 20.87,27.13 11.97,18.69 17.99,12.35"></polygon><polygon fill="#ec7d36" points="33.25,14.75 27.06,20.94 17.99,12.35 24,6"></polygon><polygon fill="#f88909" points="42,6 33.25,14.75 24,6"></polygon><polygon fill="#0095d5" points="11.51,19.15 7.99,22.88 6,21 6,13.94"></polygon><polygon fill="#2b88da" points="15.03,15.42 11.51,19.15 6,13.94 6,6.87"></polygon><polygon fill="#557bde" points="18.56,11.7 15.03,15.42 6,6.87 6,6 12.53,6"></polygon><polygon fill="#806ee3" points="22.08,7.97 18.56,11.7 12.53,6 24,6"></polygon><polygon fill="#0095d5" points="23,25 6,42 9.35,42 17.52,42 40,42"></polygon><polygon fill="#2b88da" points="25.68,42 17.52,42 11.76,36.25 15.84,32.17"></polygon><polygon fill="#557bde" points="33.86,42 25.68,42 15.84,32.17 19.92,28.09"></polygon><polygon fill="#806ee3" points="42,42 33.86,42 19.92,28.09 24,24"></polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128">
+                                <path d="m61.55 128-21.84-12.68V40.55L6.81 59.56l.08-28.32L61.55 0zM66.46 0v128l21.84-12.68V79.31l16.49 9.53-.1-24.63-16.39-9.36v-14.3l32.89 19.01-.08-28.32z" fill="#ff6f00" />
+                              </svg>
+                    </div>
+                </div>
+                <div class="div mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden md:h-80 xl:h-96 hover:scale-125 transition-transform">
+                        <img src="dist/img/porto/Storytopia.png" alt="Storytopia" width="w-full"/>
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Storytopia</h3>
+                    <p class="font-medium text-base text-secondary">Project created to fulfill classes in Dicoding, this application has several features, namely login and create an account, users can create posts using images. this application also uses the Google Maps API which is useful for finding posts based on the user's area.</p>
+                    <div class="flex items-center mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
+                            <path fill="#00c853" d="M4,23C4,11.954,12.954,3,24,3s20,8.954,20,20l-20,2L4,23z"></path><path fill="#00e676" d="M44,23c0,11.046-8.954,20-20,20S4,34.046,4,23H44z"></path><path fill="#c2eafd" d="M39.29,42.34v3.16c0,0.19-0.1,0.35-0.25,0.43c-0.14,0.09-0.33,0.1-0.5,0l-2.72-1.59l-4.68-8.15	l-2-3.47l-3.75-6.52l2.93-2.93l3.99,6.94l2.07,3.6L39.29,42.34z"></path><path fill="#9addfb" d="M31.231,28.335c-0.814,1.101-1.869,2.011-3.092,2.648l3.991,6.941	c1.185-0.648,2.272-1.446,3.265-2.346L31.231,28.335z"></path><path fill="#c2eafd" d="M39,23c0,4.24-1.77,8.08-4.62,10.81c-0.96,0.93-2.05,1.73-3.24,2.38C29.02,37.34,26.59,38,24,38	c-2.53,0-4.96-0.62-7.14-1.81l-4.68,8.15l-2.72,1.59c-0.17,0.1-0.36,0.09-0.5,0c-0.15-0.08-0.25-0.24-0.25-0.43v-3.16l10.97-19.07	l2.93,2.93l-3.75,6.53C20.43,33.56,22.18,34,24,34c1.86,0,3.61-0.46,5.14-1.28c1.21-0.63,2.28-1.49,3.17-2.51	C33.99,28.27,35,25.76,35,23H39z"></path><path fill="#37474f" d="M28.5,13H26v-3h-4v3h-2.5c-0.828,0-1.5,0.672-1.5,1.5V23l4.932,4.932c0.59,0.59,1.546,0.59,2.135,0	L30,23v-8.5C30,13.672,29.328,13,28.5,13z M24,22c-1.381,0-2.5-1.119-2.5-2.5c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5	C26.5,20.881,25.381,22,24,22z"></path>
+                            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48" class="-mr-2">
+                            <polygon fill="#0d91d6" points="24,6 17.99,12.35 11.97,18.69 6,25 6,6"></polygon><polygon fill="#f88909" points="24,6 23.96,6 17.97,12.33 11.96,18.68 6,24.97 6,25 6,25.09 6,42 14.69,33.31 20.87,27.13 27.06,20.94 33.25,14.75 42,6"></polygon><polygon fill="#c757bc" points="14.69,33.31 6,42 6,25.09"></polygon><polygon fill="#d3638f" points="20.87,27.13 14.69,33.31 6,25.09 6,25 11.97,18.69"></polygon><polygon fill="#e07063" points="27.06,20.94 20.87,27.13 11.97,18.69 17.99,12.35"></polygon><polygon fill="#ec7d36" points="33.25,14.75 27.06,20.94 17.99,12.35 24,6"></polygon><polygon fill="#f88909" points="42,6 33.25,14.75 24,6"></polygon><polygon fill="#0095d5" points="11.51,19.15 7.99,22.88 6,21 6,13.94"></polygon><polygon fill="#2b88da" points="15.03,15.42 11.51,19.15 6,13.94 6,6.87"></polygon><polygon fill="#557bde" points="18.56,11.7 15.03,15.42 6,6.87 6,6 12.53,6"></polygon><polygon fill="#806ee3" points="22.08,7.97 18.56,11.7 12.53,6 24,6"></polygon><polygon fill="#0095d5" points="23,25 6,42 9.35,42 17.52,42 40,42"></polygon><polygon fill="#2b88da" points="25.68,42 17.52,42 11.76,36.25 15.84,32.17"></polygon><polygon fill="#557bde" points="33.86,42 25.68,42 15.84,32.17 19.92,28.09"></polygon><polygon fill="#806ee3" points="42,42 33.86,42 19.92,28.09 24,24"></polygon>
+                            </svg>
+                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
+                             <path fill="#48b564" d="M35.76,26.36h0.01c0,0-3.77,5.53-6.94,9.64c-2.74,3.55-3.54,6.59-3.77,8.06	C24.97,44.6,24.53,45,24,45s-0.97-0.4-1.06-0.94c-0.23-1.47-1.03-4.51-3.77-8.06c-0.42-0.55-0.85-1.12-1.28-1.7L28.24,22l8.33-9.88	C37.49,14.05,38,16.21,38,18.5C38,21.4,37.17,24.09,35.76,26.36z"></path><path fill="#fcc60e" d="M28.24,22L17.89,34.3c-2.82-3.78-5.66-7.94-5.66-7.94h0.01c-0.3-0.48-0.57-0.97-0.8-1.48L19.76,15	c-0.79,0.95-1.26,2.17-1.26,3.5c0,3.04,2.46,5.5,5.5,5.5C25.71,24,27.24,23.22,28.24,22z"></path><path fill="#2c85eb" d="M28.4,4.74l-8.57,10.18L13.27,9.2C15.83,6.02,19.69,4,24,4C25.54,4,27.02,4.26,28.4,4.74z"></path><path fill="#ed5748" d="M19.83,14.92L19.76,15l-8.32,9.88C10.52,22.95,10,20.79,10,18.5c0-3.54,1.23-6.79,3.27-9.3	L19.83,14.92z"></path><path fill="#5695f6" d="M28.24,22c0.79-0.95,1.26-2.17,1.26-3.5c0-3.04-2.46-5.5-5.5-5.5c-1.71,0-3.24,0.78-4.24,2L28.4,4.74	c3.59,1.22,6.53,3.91,8.17,7.38L28.24,22z"></path>
+                            </svg>
+                        
+                    </div>
+                </div>
+                <div class="div mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden md:h-80 xl:h-96 hover:scale-110 transition-transform">
+                        <img src="dist/img/porto/Sebatik.png" alt="Sebatik" width="w-full"/>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Sebatik</h3>
+                        <a href="https://github.com/Sebatik/Sebatik-app" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </div>
+                    <p class="font-medium text-base text-secondary">This application is a capstone project that I developed with the team at Bangkit Academy, the main feature of this application is image classification, the application can determine the name of batik based on its motif, and also provide additional information such as history and how to make the batik. This app also using Firebase for Login and Create Account, and Firebase Storage for storing image</p>
+                    <div class="flex items-center mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
+                            <path fill="#00c853" d="M4,23C4,11.954,12.954,3,24,3s20,8.954,20,20l-20,2L4,23z"></path><path fill="#00e676" d="M44,23c0,11.046-8.954,20-20,20S4,34.046,4,23H44z"></path><path fill="#c2eafd" d="M39.29,42.34v3.16c0,0.19-0.1,0.35-0.25,0.43c-0.14,0.09-0.33,0.1-0.5,0l-2.72-1.59l-4.68-8.15	l-2-3.47l-3.75-6.52l2.93-2.93l3.99,6.94l2.07,3.6L39.29,42.34z"></path><path fill="#9addfb" d="M31.231,28.335c-0.814,1.101-1.869,2.011-3.092,2.648l3.991,6.941	c1.185-0.648,2.272-1.446,3.265-2.346L31.231,28.335z"></path><path fill="#c2eafd" d="M39,23c0,4.24-1.77,8.08-4.62,10.81c-0.96,0.93-2.05,1.73-3.24,2.38C29.02,37.34,26.59,38,24,38	c-2.53,0-4.96-0.62-7.14-1.81l-4.68,8.15l-2.72,1.59c-0.17,0.1-0.36,0.09-0.5,0c-0.15-0.08-0.25-0.24-0.25-0.43v-3.16l10.97-19.07	l2.93,2.93l-3.75,6.53C20.43,33.56,22.18,34,24,34c1.86,0,3.61-0.46,5.14-1.28c1.21-0.63,2.28-1.49,3.17-2.51	C33.99,28.27,35,25.76,35,23H39z"></path><path fill="#37474f" d="M28.5,13H26v-3h-4v3h-2.5c-0.828,0-1.5,0.672-1.5,1.5V23l4.932,4.932c0.59,0.59,1.546,0.59,2.135,0	L30,23v-8.5C30,13.672,29.328,13,28.5,13z M24,22c-1.381,0-2.5-1.119-2.5-2.5c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5	C26.5,20.881,25.381,22,24,22z"></path>
+                            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
+                            <polygon fill="#0d91d6" points="24,6 17.99,12.35 11.97,18.69 6,25 6,6"></polygon><polygon fill="#f88909" points="24,6 23.96,6 17.97,12.33 11.96,18.68 6,24.97 6,25 6,25.09 6,42 14.69,33.31 20.87,27.13 27.06,20.94 33.25,14.75 42,6"></polygon><polygon fill="#c757bc" points="14.69,33.31 6,42 6,25.09"></polygon><polygon fill="#d3638f" points="20.87,27.13 14.69,33.31 6,25.09 6,25 11.97,18.69"></polygon><polygon fill="#e07063" points="27.06,20.94 20.87,27.13 11.97,18.69 17.99,12.35"></polygon><polygon fill="#ec7d36" points="33.25,14.75 27.06,20.94 17.99,12.35 24,6"></polygon><polygon fill="#f88909" points="42,6 33.25,14.75 24,6"></polygon><polygon fill="#0095d5" points="11.51,19.15 7.99,22.88 6,21 6,13.94"></polygon><polygon fill="#2b88da" points="15.03,15.42 11.51,19.15 6,13.94 6,6.87"></polygon><polygon fill="#557bde" points="18.56,11.7 15.03,15.42 6,6.87 6,6 12.53,6"></polygon><polygon fill="#806ee3" points="22.08,7.97 18.56,11.7 12.53,6 24,6"></polygon><polygon fill="#0095d5" points="23,25 6,42 9.35,42 17.52,42 40,42"></polygon><polygon fill="#2b88da" points="25.68,42 17.52,42 11.76,36.25 15.84,32.17"></polygon><polygon fill="#557bde" points="33.86,42 25.68,42 15.84,32.17 19.92,28.09"></polygon><polygon fill="#806ee3" points="42,42 33.86,42 19.92,28.09 24,24"></polygon>
+                            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128">
+                            <path d="m61.55 128-21.84-12.68V40.55L6.81 59.56l.08-28.32L61.55 0zM66.46 0v128l21.84-12.68V79.31l16.49 9.53-.1-24.63-16.39-9.36v-14.3l32.89 19.01-.08-28.32z" fill="#ff6f00" />
+                            </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
+                            <path fill="#ff8f00" d="M8,37L23.234,8.436c0.321-0.602,1.189-0.591,1.494,0.02L30,19L8,37z"></path><path fill="#ffa000" d="M8,36.992l5.546-34.199c0.145-0.895,1.347-1.089,1.767-0.285L26,22.992L8,36.992z"></path><path fill="#ff6f00" d="M8.008 36.986L8.208 36.829 25.737 22.488 20.793 13.012z"></path><path fill="#ffc400" d="M8,37l26.666-25.713c0.559-0.539,1.492-0.221,1.606,0.547L40,37l-15,8.743 c-0.609,0.342-1.352,0.342-1.961,0L8,37z"></path>
+                            </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolie section end -->
+
+    <!-- Education section start -->
+    <section id="education" class="pt-20 pb-8 bg-slate-700">
+        <div class="container">
+            <div class="w-full">
+                <div class="w-full mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-3xl text-white mb-5">Education</h4>
+                    <div class="grid grid-cols-4 border border-blue-300 rounded-md">
+                        <div class="m-auto sm:p-3">
+                            <img src="dist/img/Logo_Unindra__Universitas_Indraprasta_PGRI__Original_PNG-removebg-preview.png" alt="Unindra" width="200">
+                        </div>
+                        <div class="col-span-3 text-left text-white my-auto">
+                            <div class="flex items-center justify-between mr-2">
+                                <h3 class="text-2xl">Indraprasta PGRI University</h3>
+                                <p class="text-sm">2021 - <span class="italic">present</span> </p>
+                            </div>
+                            <p>Bachelor in Informatics Engineering</p>
+                            <ul class="list-disc ml-4 text-base">
+                                <li>Explored the art of organizing and managing data through versatile structures like arrays, linked lists, and trees, unlocking new levels of efficiency.</li>
+                                <li>Dive into building and maintaining dynamic websites and web applications, mastering HTML, CSS, and JavaScript to bring engaging digital experiences to life.</li>
+                                <li>Crafted and refined step-by-step algorithms, designing innovative solutions to complex computational problems with precision and creativity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-4 border border-red-600 rounded-md mt-5">
+                        <div class="m-auto sm:p-3">
+                            <img src="dist/img/Bangkit.png" alt="Unindra" width="200" class="rounded-lg">
+                        </div>
+                        <div class="col-span-3 text-left text-white my-2">
+                            <div class="flex items-center justify-between mr-2">
+                                <h3 class="text-2xl">Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</h3>
+                                <p class="text-sm">Feb 2024 - Jul 2024</p>
+                            </div>
+                            <p>Mobile Development Cohort</p>
+                            <ul class="list-disc ml-4 text-base mr-2">
+                                <li> Achieved academic excellence by graduating with <span class="font-extrabold">Distinction</span>, reflecting my deep understanding and exceptional performance in my Android Development studies.</li>
+                                <li> studied advanced mobile development techniques at Bangkit Academy, gaining hands-on experience with cutting-edge tools and frameworks to build innovative and high-performance applications.</li>
+                                <li>Learning about Android architecture with MVVM for scalable app development and explored machine learning implementation to enhance app functionality and user experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-4 border border-blue-600 rounded-md mt-5">
+                        <div class="m-auto sm:p-3">
+                            <img src="dist/img/digitalent.jpg" alt="Unindra" width="150" class="rounded-lg">
+                        </div>
+                        <div class="col-span-3 text-left text-white my-2">
+                            <div class="flex items-center justify-between mr-2">
+                                <h3 class="text-2xl">Digital Talent Scholarship</h3>
+                                <p class="text-sm">Jun 2022 - Sep 2022</p>
+                            </div>
+                            <p>Junior Web Developer</p>
+                            <ul class="list-disc ml-4 text-base">
+                                <li>Studied advanced front-end technologies, including HTML, CSS, and JavaScript, to create responsive and visually appealing web interfaces.</li>
+                                <li>Explored back-end development techniques, learning to connect front-end interfaces with databases and server-side logic to build fully functional web applications.</li>
+                                <li>Delved into industry best practices, such as version control, testing, and optimization, to ensure high-quality and maintainable code in web development projects.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education section end -->
+
+    <!-- Footer Start -->
+    <section id="footer" class="bg-slate-600">
+        <div class="text-center p-9">
+            <p class="text-lg text-white">Porftolio 2024 by Rama Adji Prasetyo created with <a href="https://tailwindcss.com/" class="hover:underline text-blue-400">TailwindCSS</a> </p>
+        </div>
+    </section>
+
+    </footer>
+    <!-- Footer End -->
+    
+
 
 
     <script src="dist/js/script.js"></script>
