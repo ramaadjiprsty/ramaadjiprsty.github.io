@@ -74,9 +74,9 @@ const Index = () => {
   const education = [
     {
       degree: "Bachelor of Informatics Engineering",
-      institution: "University of Technology",
-      year: "2020 - 2024",
-      gpa: "3.85/4.00"
+      institution: "Indraprasta PGRI University",
+      year: "2021 - 2025",
+      gpa: "3.71/4.00"
     }
   ];
 
@@ -107,7 +107,7 @@ const Index = () => {
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up">
-            <span className="gradient-text">Alex Johnson</span>
+            <span className="gradient-text">Rama Adji Prasetyo</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-6 animate-fade-in-up">
             Android Developer | AI Engineer
@@ -288,7 +288,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-gradient-to-r from-neon-blue to-neon-green hover:opacity-90 transition-opacity">
                 <Mail className="w-4 h-4 mr-2" />
-                alex.johnson@email.com
+                ramaadjiprsty@gmail.com
               </Button>
               <Button variant="outline" className="border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-black">
                 <Linkedin className="w-4 h-4 mr-2" />
