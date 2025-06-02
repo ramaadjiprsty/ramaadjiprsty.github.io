@@ -151,7 +151,7 @@ const Index = () => {
         <div className="container mx-auto px-6 text-center z-10">
           <div className="mb-8">
             <img 
-              src="src/assets/profile.png" 
+              src= {images.profile}
               alt="Profile" 
               className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-neon-blue glow-effect"
             />

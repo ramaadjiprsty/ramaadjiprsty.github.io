@@ -4,6 +4,7 @@
 import emediaImage from '@/assets/emedia.png';
 import sebatikImage from '@/assets/Sebatik.png';
 import gitfinderImage from '@/assets/gitfinder.png';
+import profileImage from '@/assets/profile.png';
 
 // Tech icons / logos
 import androidStudioImage from '@/assets/android-studio.png';
@@ -20,6 +21,7 @@ export const images = {
     emedia: emediaImage,
     sebatik: sebatikImage,
     gitfinder: gitfinderImage,
+    profile: profileImage,
 
   // Tech Logos
     androidStudio: androidStudioImage,
