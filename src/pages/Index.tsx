@@ -7,66 +7,99 @@ import { Github, Linkedin, Mail, Code, User, Calendar, Book, FileText } from "lu
 
 const Index = () => {
   const skills = [
-    'Kotlin', 'Android Development', 'Jetpack Compose', 'Python', 'TensorFlow', 
-    'PyTorch', 'Machine Learning', 'Deep Learning', 'Firebase', 'Git',
-    'SQL', 'REST APIs', 'MVVM', 'Clean Architecture'
+    'Kotlin', 'Javascript', 'Typescript', 'Android Development', 'Jetpack Compose', 'Python', 'TensorFlow', 
+    'Machine Learning', 'Deep Learning', 'Firebase', 'Git',
+    'SQL', 'MVVM', 'Clean Architecture', 'Docker', 'CI/CD'
   ];
 
   const techStack = [
-    { name: 'Android Studio', category: 'IDE' },
-    { name: 'Kotlin', category: 'Language' },
-    { name: 'Python', category: 'Language' },
-    { name: 'TensorFlow', category: 'AI/ML' },
-    { name: 'PyTorch', category: 'AI/ML' },
-    { name: 'Firebase', category: 'Backend' },
-    { name: 'Git', category: 'Version Control' },
-    { name: 'Figma', category: 'Design' }
+    { name: 'Android Studio', category: 'IDE', image:"src/assets/android-studio.png" },
+    { name: 'Kotlin', category: 'Language', image:"src/assets/Kotlin.png" },
+    { name: 'Python', category: 'Language', image:'src/assets/python.png' },
+    { name: 'Typescript', category: 'Language', image:'src/assets/typescript.png' },
+    { name: 'TensorFlow', category: 'AI/ML', image:'src/assets/tensorflow.png' },
+    { name: 'Git', category: 'Version Control', image:'src/assets/git.png' },
+    { name: 'React Native', category: 'Framework', image:'src/assets/react-native.png' },
+    { name: 'Docker', category: 'Container', image:'src/assets/docker.png' },
   ];
 
   const projects = [
     {
-      title: "Smart Health Tracker",
-      description: "Android app with AI-powered health recommendations using machine learning algorithms",
-      tech: ["Kotlin", "TensorFlow Lite", "Firebase", "Jetpack Compose"],
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop"
+      title: "E-Media DPR RI",
+      description: "Official Android app for accessing real-time news, legislative information, and DPR RI activities with a modern interface.",
+      tech: ["Javascript", "React Native", 'Expo', "Nativewind"],
+      image: "src/assets/emedia.png",
+      url: "https://play.google.com/store/apps/details?id=com.emedia.dprri"
     },
     {
-      title: "AI Chatbot Assistant",
-      description: "Intelligent chatbot using NLP and deep learning for customer service automation",
-      tech: ["Python", "PyTorch", "FastAPI", "Transformer Models"],
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop"
+      title: "Sebatik",
+      description: "An Android app integrated with a deployed machine learning model via REST API to classify various traditional Indonesian batik patterns. Users can take or upload photos and get instant batik type predictions along with cultural insights.",
+      tech: ["Kotlin", "Room Database", "Material Design", "Firebase", "REST API", "Retrofit", "MVVM Architecture"],
+      image: "src/assets/Sebatik.png",
     },
     {
-      title: "Budget Management App",
-      description: "Personal finance Android application with expense tracking and analytics",
-      tech: ["Kotlin", "Room Database", "Material Design", "Charts"],
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop"
-    }
+      title: "GitFinder",
+      description: "Android app that allows users to search for GitHub profiles by username using the GitHub API, displaying detailed user information and repositories in a clean and responsive UI.",
+      tech: ["Kotlin", "Retrofit", "Room Database", "Coroutines"],
+      image: "src/assets/gitfinder.png",
+      url: "https://github.com/ramaadjiprsty/GitFinder"
+    },
   ];
 
   const certificates = [
     {
-      title: "Android Developer Certification",
-      issuer: "Google",
+      title: "Dev Certified for Android",
+      issuer: "dev.id",
+      date: "2025",
+      type: "Course",
+      url: "https://dev.id/certificate/verify/GE0NJXZV41"
+    },
+    {
+      title: "Building Machine Learning Systems",
+      issuer: "Dicoding",
+      date: "2025",
+      type: "Course",
+      url: "https://www.dicoding.com/certificates/53XED6K8KPRN"
+    },
+    {
+      title: "Deep Learning Fundamentals",
+      issuer: "Dicoding",
+      date: "2025",
+      type: "Course",
+      url: "https://www.dicoding.com/certificates/72ZD56Y1VZYW"
+    },
+    {
+      title: "Learning the Application of Data Science",
+      issuer: "Dicoding",
+      date: "2025",
+      type: "Course",
+      url: "https://www.dicoding.com/certificates/53XED8YWVPRN"
+    },
+    {
+      title: "Introduction to Cybersecurity",
+      issuer: "Cisco Network Academy",
+      date: "2025",
+      type: "Course",
+      url: "https://www.netacad.com/certificates?issuanceId=18447277-efb1-4c0b-a7ea-9f3b1be005c0"
+    },
+    {
+      title: "Networking Basics",
+      issuer: "Cisco Network Academy",
+      date: "2025",
+      type: "Course",
+      url: "https://www.netacad.com/certificates?issuanceId=c5dc72cd-51d8-403f-942d-574f5fd6a578"
+    },
+    {
+      title: "Expert Android Developer",
+      issuer: "Dicoding",
       date: "2024",
-      type: "Professional"
+      type: "Course",
+      url: "https://www.dicoding.com/certificates/0LZ06896RZ65"
     },
     {
-      title: "Machine Learning Specialization",
-      issuer: "Stanford University (Coursera)",
-      date: "2023",
-      type: "Course"
-    },
-    {
-      title: "TensorFlow Developer Certificate",
-      issuer: "TensorFlow",
-      date: "2024",
-      type: "Professional"
-    },
-    {
-      title: "Deep Learning Specialization",
-      issuer: "DeepLearning.AI",
-      date: "2023",
+      title: "Junior Web Developer",
+      issuer: "Digital Talent Scholarship",
+      date: "2022",
       type: "Course"
     }
   ];
@@ -76,7 +109,22 @@ const Index = () => {
       degree: "Bachelor of Informatics Engineering",
       institution: "Indraprasta PGRI University",
       year: "2021 - 2025",
-      gpa: "3.71/4.00"
+      gpa: " GPA: 3.71/4.00"
+    },
+    {
+      degree: "AI Engineer Cohort",
+      institution: "Laskar AI",
+      year: "Feb 2025 - July 2025",
+    },
+    {
+      degree: "Mobile Development Cohort",
+      institution: "Bangkit Academy led by Google, Tokopedia, Gojek and Traveloka",
+      year: "Feb 2024 - July 2024",
+    },
+    {
+      degree: "Junior Web Developer",
+      institution: "Digital Talent Scholarship",
+      year: "Jun 2022 - Sep 2022",
     }
   ];
 
@@ -101,7 +149,7 @@ const Index = () => {
         <div className="container mx-auto px-6 text-center z-10">
           <div className="mb-8">
             <img 
-              src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=200&h=200&fit=crop&crop=face" 
+              src="src/assets/profile.png" 
               alt="Profile" 
               className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-neon-blue glow-effect"
             />
@@ -110,7 +158,7 @@ const Index = () => {
             <span className="gradient-text">Rama Adji Prasetyo</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-6 animate-fade-in-up">
-            Android Developer | AI Engineer
+            Android Developer | AI/ML Enthusiast
           </p>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8 animate-fade-in-up">
             Fresh graduate passionate about creating innovative mobile applications and AI solutions. 
@@ -173,7 +221,7 @@ const Index = () => {
                     </Badge>
                   </div>
                   <p className="text-gray-300 mb-2">{edu.institution}</p>
-                  <p className="text-sm text-gray-400">GPA: {edu.gpa}</p>
+                  <p className="text-sm text-gray-400">{edu.gpa}</p>
                 </CardContent>
               </Card>
             ))}
@@ -187,7 +235,7 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="tech-card group cursor-pointer">
+              <Card key={index} className="tech-card group cursor-pointer" onClick={() => window.open(project.url, "_blank")}>
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img 
                     src={project.image} 
@@ -219,11 +267,8 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Certificates</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {certificates.map((cert, index) => (
-              <Card key={index} className="tech-card">
+              <Card key={index} className="tech-card cursor-pointer" onClick={() => window.open(cert.url, "_blank")}>
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-neon-blue to-neon-purple rounded-full flex items-center justify-center mx-auto mb-4">
-                    <FileText className="w-6 h-6 text-white" />
-                  </div>
                   <h3 className="text-lg font-semibold mb-2">{cert.title}</h3>
                   <p className="text-sm text-gray-300 mb-2">{cert.issuer}</p>
                   <Badge variant="outline" className="border-neon-purple text-neon-purple">
@@ -263,9 +308,13 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {techStack.map((tech, index) => (
               <Card key={index} className="tech-card">
-                <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-neon-green to-neon-blue rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Code className="w-6 h-6 text-white" />
+                <CardContent className="p-4 text-center">
+                  <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                    {tech.image ? (
+                      <img src={tech.image} alt={tech.name} className="w-8 h-8 object-contain" />
+                    ) : (
+                      tech.name[0]
+                    )}
                   </div>
                   <h3 className="font-semibold mb-1">{tech.name}</h3>
                   <p className="text-xs text-gray-400">{tech.category}</p>
@@ -290,11 +339,11 @@ const Index = () => {
                 <Mail className="w-4 h-4 mr-2" />
                 ramaadjiprsty@gmail.com
               </Button>
-              <Button variant="outline" className="border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-black">
+              <Button variant="outline" className="border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-black" onClick={() => window.open("https://www.linkedin.com/in/ramaadjiprsty/", "_blank")}>
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn
               </Button>
-              <Button variant="outline" className="border-neon-pink text-neon-pink hover:bg-neon-pink hover:text-black">
+              <Button variant="outline" className="border-neon-pink text-neon-pink hover:bg-neon-pink hover:text-black" onClick={() => window.open("https://github.com/ramaadjiprsty", "_blank")}>
                 <Github className="w-4 h-4 mr-2" />
                 GitHub
               </Button>
@@ -308,7 +357,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Alex Johnson. All rights reserved.
+              © 2025 Rama Adji Prasetyo. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#about" className="text-gray-400 hover:text-neon-blue transition-colors text-sm">About</a>
