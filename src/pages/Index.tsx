@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Mail, Code, User, Calendar, Book, FileText } from "lucide-react";
+import { images } from '@/lib/assets';
 
 const Index = () => {
   const skills = [
@@ -13,14 +14,14 @@ const Index = () => {
   ];
 
   const techStack = [
-    { name: 'Android Studio', category: 'IDE', image:"src/assets/android-studio.png" },
-    { name: 'Kotlin', category: 'Language', image:"src/assets/Kotlin.png" },
-    { name: 'Python', category: 'Language', image:'src/assets/python.png' },
-    { name: 'Typescript', category: 'Language', image:'src/assets/typescript.png' },
-    { name: 'TensorFlow', category: 'AI/ML', image:'src/assets/tensorflow.png' },
-    { name: 'Git', category: 'Version Control', image:'src/assets/git.png' },
-    { name: 'React Native', category: 'Framework', image:'src/assets/react-native.png' },
-    { name: 'Docker', category: 'Container', image:'src/assets/docker.png' },
+    { name: 'Android Studio', category: 'IDE', image: images.androidStudio },
+    { name: 'Kotlin', category: 'Language', image: images.kotlin },
+    { name: 'Python', category: 'Language', image:images.python },
+    { name: 'Typescript', category: 'Language', image: images.typescript },
+    { name: 'TensorFlow', category: 'AI/ML', image: images.tensorflow },
+    { name: 'Git', category: 'Version Control', image: images.git },
+    { name: 'React Native', category: 'Framework', image: images.reactNative },
+    { name: 'Docker', category: 'Container', image: images.docker },
   ];
 
   const projects = [
@@ -28,20 +29,21 @@ const Index = () => {
       title: "E-Media DPR RI",
       description: "Official Android app for accessing real-time news, legislative information, and DPR RI activities with a modern interface.",
       tech: ["Javascript", "React Native", 'Expo', "Nativewind"],
-      image: "src/assets/emedia.png",
+      image: images.emedia,
       url: "https://play.google.com/store/apps/details?id=com.emedia.dprri"
     },
     {
       title: "Sebatik",
       description: "An Android app integrated with a deployed machine learning model via REST API to classify various traditional Indonesian batik patterns. Users can take or upload photos and get instant batik type predictions along with cultural insights.",
       tech: ["Kotlin", "Room Database", "Material Design", "Firebase", "REST API", "Retrofit", "MVVM Architecture"],
-      image: "src/assets/Sebatik.png",
+      image: images.sebatik,
+      url: "https://github.com/Sebatik/Sebatik-app"
     },
     {
       title: "GitFinder",
       description: "Android app that allows users to search for GitHub profiles by username using the GitHub API, displaying detailed user information and repositories in a clean and responsive UI.",
       tech: ["Kotlin", "Retrofit", "Room Database", "Coroutines"],
-      image: "src/assets/gitfinder.png",
+      image: images.gitfinder,
       url: "https://github.com/ramaadjiprsty/GitFinder"
     },
   ];
